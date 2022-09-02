@@ -7,7 +7,7 @@ box-sizing: border-box;
 }
 
 body{
-    background-image: url(Imagen1.jpg);
+    background-image: url(/Front/images/huellas1.png);
     background-repeat: no-repeat;
     background-size: auto !important;
     overflow-y: hidden;
@@ -190,7 +190,7 @@ text-decoration: none;
  border-style: dashed;
  font-weight: bold;
  color: black;
- background-image: url(images/perro.png);
+ background-image: url(/Front/images/perro.png);
  background-repeat: no-repeat;
  background-position: bottom;
  box-shadow: 7px 13px 37px #3498DB ;
@@ -233,7 +233,7 @@ margin-left: 100px;
  border-style: dashed;
  font-weight: bold;
  color: black;
- background-image: url(propietarios.png);
+ background-image: url(/Front/images/propietarios.png);
  background-repeat: no-repeat;
  background-position: bottom;
  box-shadow: 7px 13px 37px #3498DB ;
@@ -259,7 +259,7 @@ margin-left: 100px;
  border-style: dashed;
  font-weight: bold;
  color: black;
- background-image: url(veterinario.png);
+ background-image: url(/Front/images/veterinario.png);
  background-repeat: no-repeat;
  background-position: bottom;
  box-shadow: 7px 13px 37px #3498DB ;
