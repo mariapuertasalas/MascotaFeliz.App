@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <meta charset="UTF-8"> 
     <link rel="stylesheet" href="/Front/css/style.css">
-    <title>MASCOTAFELIZ</title>   
-  </head>
-  <body>
-
+    <title>CONSULTA MASCOTA</title>
+    
+    
+</head>
+<body>
     <header>
+      <header>
         <div class="container-logos">
           <div class="logos" id="logo1">
             <img src="/Front/images/logo-1.png" />
@@ -47,13 +49,38 @@
             <li><a href="#">Galeria</a></li> 
       </ul>
     </nav>
+      </header>  
+    <section class="general">
 
-    <div class="inicio">
-        <div id="title">Bienvenidos</div>
-        <div id="slogan">¡Mascota Feliz Online!</div>
+        <section class="register" id="register4">
+            <h4>Consultar Informacion</h4>
+            <select class="controls" name="select">
+                <option value="value1">Todos</option>
+                <option value="value2" selected>Perro</option>
+                <option value="value3">Gato</option>
+                <option value="value3">Conejo</option>
+                <option value="value3">Tortuga</option>
+              </select>
+              <div >
+                <input class="controls" type="text" name="Nombre" id="nombre" placeholder="Nombre de mascota">
+                <input class="controls" type="text" name="Nombre" id="nombre" placeholder="Nombre de Veterinario">
+                <input class="controls" type="text" name="Nombre" id="nombre" placeholder="Nombre de Propietario">
+            </div>
+            
+            <a href="/Front/views/ListarMascotas.html">
+              <input type="submit" id="btnConsultar" value="Consultar"  class="botons"/>
+            </a>
+              
+ 
+        </section>
+        
+        <section class="form-register">
+        <h4>Consulta de Mascota</h4>
+         </section>
+  
+    </section>
+    
           
-    </div>
-           
 </body>
 
 </html>

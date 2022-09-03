@@ -9,35 +9,50 @@
     <link rel="stylesheet" href="/Front/css/style.css">
     <title>MASCOTAFELIZ</title>
     <header>
-      <nav class ="navegacion"> 
-        <ul class="menu">
-          <li><a href="/Front/views/Inicio.html">Inicio</a></li>
-          <li><a href="#">Registros</a>
-              <ul class="submenu">
-                <li><a href="/Front/views/RegistroMascota.html">Registro Mascota</a></li>
+      <header>
+        <div class="container-logos">
+          <div class="logos" id="logo1">
+            <img src="/Front/images/logo-1.png" />
+          </div>
+          <div class="logos" id="logo2">
+            <img src="/Front/images/logo-2.png" />
+          </div>
+        </div>
+
+        <div id="background-header">
+            <img src="/Front/images/header.jpg" />
+        </div>
+    </header> 
+    <nav class ="navegacion"> 
+      <ul class="menu">
+        <li><a href="/Front/views/Inicio.html">Inicio</a></li>
+        <li><a href="#">Registros</a>
+            <ul class="submenu">
+              <li><a href="/Front/views/RegistroMascota.html">Registro Mascota</a></li>
               <li><a href="/Front/views/RegistroPropietario.html">Registro Propietario</a></li>
               <li><a href="/Front/views/RegistroVeterinario.html">Registro Veterinario</a></li>
-              </ul>
-          </li>
-          <li><a href="#">Servicios</a>
-              <ul class="submenu">
-              <li><a href="#">Asignacion de Veterinario</a></li>
-              <li><a href="#">Promocion y Prevencion</a></li>
-              </ul>
-          </li>
-          <li><a href="#">Contactos</a></li> 
-          <li><a href="#">Consultas</a>
-              <ul class="submenu">
-                <li><a href="/Front/views/Consultas.html">Consulta Mascota</a></li>
-                <li><a href="#">Actualizacion de Datos</a></li>
-              </ul>
-          </li>
-        </ul>
-      </nav>
+            </ul>
+        </li>
+        <li><a href="#">Servicios</a>
+            <ul class="submenu">
+            <li><a href="#">Asignacion de Veterinario</a></li>
+            <li><a href="#">Promocion y Prevencion</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Consultas</a>
+            <ul class="submenu">
+              <li><a href="/Front/views/ConsultarMascota.html">Consulta Mascota</a></li>
+              <li><a href="#">Actualizacion de Datos</a></li>
+            </ul>
+        </li>
+            <li><a href="#">Contactos</a></li> 
+            <li><a href="#">Galeria</a></li> 
+      </ul>
+    </nav>
     </header>  
-    
+    <div class="container-tabla">
       <table class="tablas"> 
-        <div><h2>Tabla Informativa</h2></div>
+        <div><h2>Listado de Mascotas</h2></div>
         <tr>
           <th>Nombre</th>
           <th>Especie</th>
@@ -90,10 +105,7 @@
         </tr>
         
       </table>
-      
-      
-
-   
+      </div>   
     
   </head>        
 </body>

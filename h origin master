@@ -1,0 +1,23 @@
+[33mcommit 6c6c133dec6b4726660c750017a0875fb185cdbc[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m, [m[1;31morigin/master[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Maria Puerta Salas <maria.puerta.sala@gmail.com>
+Date:   Fri Sep 2 10:46:04 2022 -0500
+
+    cambio de las url de las imagenes
+
+[33mcommit c5c680eb473cf7acc117241bf63faf70b8ce3b7b[m
+Author: Maria Puerta Salas <maria.puerta.sala@gmail.com>
+Date:   Thu Sep 1 20:09:45 2022 -0500
+
+    se crearon carpetas de css, images y views
+
+[33mcommit c85771dd222009b4db2578fde0caaf22c1b07225[m[33m ([m[1;31morigin/mpuerta[m[33m)[m
+Author: mariapuertasalas <112360979+mariapuertasalas@users.noreply.github.com>
+Date:   Thu Sep 1 19:59:02 2022 -0500
+
+    Create README.md
+
+[33mcommit 38ee381cf99baff41f9ba2250e519ab9aaadc93a[m
+Author: Maria Puerta Salas <maria.puerta.sala@gmail.com>
+Date:   Thu Sep 1 19:52:22 2022 -0500
+
+    Commit Inicial del Proyecto de Mascotas - Se agregan vistas
