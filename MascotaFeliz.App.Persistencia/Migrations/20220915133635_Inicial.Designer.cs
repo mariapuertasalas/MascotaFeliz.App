@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MascotaFeliz.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20220829175916_Inicial")]
+    [Migration("20220915133635_Inicial")]
     partial class Inicial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,14 +46,11 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                     b.Property<string>("Color")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("DuenoId")
-                        .HasColumnType("int");
-
                     b.Property<string>("Especie")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("HsitoriaId")
-                        .HasColumnType("int");
+                    b.Property<string>("Identificacion")
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombre")
                         .HasColumnType("nvarchar(max)");
@@ -61,16 +58,7 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                     b.Property<string>("Raza")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int?>("VeterinarioId")
-                        .HasColumnType("int");
-
                     b.HasKey("Id");
-
-                    b.HasIndex("DuenoId");
-
-                    b.HasIndex("HsitoriaId");
-
-                    b.HasIndex("VeterinarioId");
 
                     b.ToTable("Mascotas");
                 });
@@ -90,6 +78,9 @@ namespace MascotaFeliz.App.Persistencia.Migrations
 
                     b.Property<string>("Discriminator")
                         .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Identificacion")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Nombres")
@@ -164,27 +155,6 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.HasDiscriminator().HasValue("Veterinario");
-                });
-
-            modelBuilder.Entity("MascotaFeliz.App.Dominio.Mascota", b =>
-                {
-                    b.HasOne("MascotaFeliz.App.Dominio.Dueno", "Dueno")
-                        .WithMany()
-                        .HasForeignKey("DuenoId");
-
-                    b.HasOne("MascotaFeliz.App.Dominio.Historia", "Hsitoria")
-                        .WithMany()
-                        .HasForeignKey("HsitoriaId");
-
-                    b.HasOne("MascotaFeliz.App.Dominio.Veterinario", "Veterinario")
-                        .WithMany()
-                        .HasForeignKey("VeterinarioId");
-
-                    b.Navigation("Dueno");
-
-                    b.Navigation("Hsitoria");
-
-                    b.Navigation("Veterinario");
                 });
 
             modelBuilder.Entity("MascotaFeliz.App.Dominio.VisitaPyP", b =>

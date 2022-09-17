@@ -23,9 +23,9 @@ namespace MascotaFeliz.App.Persistencia
             _appContext = appContext;
         }
 
-        public Dueno AddDueno(Dueno dueno)
+        public Dueno AddDueno(Dueno nuevoDueno)
         {
-            var duenoAdicionado = _appContext.Duenos.Add(dueno);
+            var duenoAdicionado = _appContext.Duenos.Add(nuevoDueno);
             _appContext.SaveChanges();
             return duenoAdicionado.Entity;
         }
@@ -62,9 +62,14 @@ namespace MascotaFeliz.App.Persistencia
             return _appContext.Duenos;
         }
 
-        public Dueno GetDueno(int idDueno)
+        public Dueno GetDueno(int Id)
         {
-            return _appContext.Duenos.FirstOrDefault(d => d.Id == idDueno);
+            return _appContext.Duenos.FirstOrDefault(d => d.Id == Id);
+        }
+
+        public Dueno GetDuenoPorIdentificacion(String Identificacion)
+        {
+            return _appContext.Duenos.FirstOrDefault(d => d.Identificacion == Identificacion);
         }
 
         public Dueno UpdateDueno(Dueno dueno)
@@ -72,6 +77,7 @@ namespace MascotaFeliz.App.Persistencia
             var duenoEncontrado = _appContext.Duenos.FirstOrDefault(d => d.Id == dueno.Id);
             if (duenoEncontrado != null)
             {
+                duenoEncontrado.Identificacion = dueno.Identificacion;
                 duenoEncontrado.Nombres = dueno.Nombres;
                 duenoEncontrado.Apellidos = dueno.Apellidos;
                 duenoEncontrado.Direccion = dueno.Direccion;

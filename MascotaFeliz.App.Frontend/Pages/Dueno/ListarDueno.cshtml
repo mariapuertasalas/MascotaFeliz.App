@@ -1,0 +1,47 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.ListarDuenoModel
+@{
+}
+
+<section class='general'>
+
+  <div class='contenedor-titulo'>
+    <h4>Listado de Propietario</h4>
+  </div>
+
+    <a asp-page="RegistrarDueno">
+        <div class='button-registrar'>
+            <i class="fa-solid fa-database">Registrar</i>
+        </div>
+   </a>
+
+  <div class='contenedor-tabla'>
+        <table class="table table-striped table-hove">
+                <thead>
+                    <th>N°</th>
+                    <th>Identificacion</th>
+                    <th>Nombres</th>
+                    <th>Apellidos</th>
+                    <th colspan="3">Operaciones</th>
+                </thead>
+
+                
+            </section>
+
+                <tbody>
+                @foreach (var dueno in Model.listaDuenos)
+                {
+                    <tr>
+                        <td>@dueno.Id</td>
+                        <td>@dueno.Identificacion</td>
+                        <td>@dueno.Nombres</td>
+                        <td>@dueno.Apellidos</td>
+                        <td><a asp-page="ConsultarDueno" asp-route-id='@dueno.Id'><i class="fa-solid fa-magnifying-glass"></i></a></td>
+                        <td><a asp-page="ActualizarDueno" asp-route-id='@dueno.Id'><i class="fa-solid fa-arrows-rotate"></i></a></td>
+                        <td><a asp-page="EliminarDueno" asp-route-id='@dueno.Id'><i class="fa-solid fa-trash"></i></a></td>
+                    </tr>
+                }
+                </tbody>
+            </table>
+        </div>
+  </div>

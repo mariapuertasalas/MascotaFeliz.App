@@ -8,11 +8,12 @@ namespace MascotaFeliz.App.Persistencia
 {
     public interface IRepositorioDueno
     {
-        public IEnumerable<Dueno> GetAllDuenos();
-        public Dueno AddDueno(Dueno dueno);
-        public Dueno UpdateDueno(Dueno dueno);
-        public void DeleteDueno(int idDueno);
-        public Dueno GetDueno(int idDueno);
-        public IEnumerable<Dueno> GetDuenosPorFiltro(string filtro);
+        IEnumerable<Dueno> GetAllDuenos();
+        Dueno AddDueno(Dueno nuevoDueno);
+        Dueno UpdateDueno(Dueno dueno);
+        void DeleteDueno(int id);
+        Dueno GetDueno(int id);
+        Dueno GetDuenoPorIdentificacion(String Identificacion);
+        IEnumerable<Dueno> GetDuenosPorFiltro(string filtro);
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "6ssMmk0VEWWO6Kw9a35frAfOdT+wVUWVRMf2luEDnKcoEafsQK2AGT7Sds9uXx5qLKho6OzeoILphIqfF57T/A==",
+  "dgSpecHash": "VOW8VneRxdAH1w7Y8sAEpPS0eGPYQTIT0jBvfHBxUymrcYVEJ9/ciWCcrGvNj+Hva0AWagVMMV2QgxS00ci0YQ==",
   "success": true,
   "projectFilePath": "C:\\Mascotas\\MascotaFeliz.App\\MascotaFeliz.App.Consola\\MascotaFeliz.App.Consola.csproj",
   "expectedPackageFiles": [
@@ -14,6 +14,7 @@
     "C:\\Users\\Jiliar Silgado\\.nuget\\packages\\microsoft.entityframeworkcore.design\\5.0.0\\microsoft.entityframeworkcore.design.5.0.0.nupkg.sha512",
     "C:\\Users\\Jiliar Silgado\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\5.0.0\\microsoft.entityframeworkcore.relational.5.0.0.nupkg.sha512",
     "C:\\Users\\Jiliar Silgado\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\5.0.0\\microsoft.entityframeworkcore.sqlserver.5.0.0.nupkg.sha512",
+    "C:\\Users\\Jiliar Silgado\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\5.0.0\\microsoft.entityframeworkcore.tools.5.0.0.nupkg.sha512",
     "C:\\Users\\Jiliar Silgado\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\5.0.0\\microsoft.extensions.caching.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\Jiliar Silgado\\.nuget\\packages\\microsoft.extensions.caching.memory\\5.0.0\\microsoft.extensions.caching.memory.5.0.0.nupkg.sha512",
     "C:\\Users\\Jiliar Silgado\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\5.0.0\\microsoft.extensions.configuration.abstractions.5.0.0.nupkg.sha512",

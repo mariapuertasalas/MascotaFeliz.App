@@ -18,22 +18,23 @@ namespace MascotaFeliz.App.Consola
         {
             Console.WriteLine("Hello World!");
              //ListarDuenosFiltro();      
-           //AddDueno();
+            AddDueno();
            //BuscarDueno(1);
             //ListarVeterinariosFiltro();
-            //AddVeterinario();
+            AddVeterinario();
             //BuscarVeterinario(1);
             //AddHistoria();
-            //AddMascota();
+            AddMascota();
             //BuscarMascota(1);
-            ListarMascota();
+            //ListarMascota();
         }
             private static void AddDueno()
         {
             var dueno = new Dueno
             {
-                Nombres = "Leonardo",
-                Apellidos = "Rodriguez", 
+                Identificacion= "72157122",
+                Nombres = "Carlos",
+                Apellidos = "Fernandez", 
                 Direccion = "Calle 120",
                 Telefono = "111258258",
                 Correo = "Batman@gmail.com"
@@ -45,8 +46,9 @@ namespace MascotaFeliz.App.Consola
         {
             var veterinario = new Veterinario
             {
-                Nombres = "La Chilindrina",
-                Apellidos = "No se sabe", 
+                Identificacion= "723566823",
+                Nombres = "Nicolaza",
+                Apellidos = "Nieves", 
                 Direccion = "Transversal 5 # 17A-155",
                 Telefono = "2222222222",
                 TarjetaProfesional = "TP0001"
@@ -100,27 +102,28 @@ namespace MascotaFeliz.App.Consola
         {
             var mascota = new Mascota
             {
-                Nombre = "Camelia",
-                Color= "Blanco", 
-                Especie = "Gato",
-                Raza = "Esfinge",
+                Identificacion= "72157",
+                Nombre = "Jakie",
+                Color= "Negro", 
+                Especie = "Perro",
+                Raza = "beagle",
             };
             _repoMascota.AddMascota(mascota);
         }
-        private static void BuscarMascota(int idMascota)
-        {
-            var mascota = _repoMascota.GetMascota(idMascota);
-            Console.WriteLine(mascota.Nombre + " " + mascota.Raza+" "+mascota.Color+" "+mascota.Especie);
-        }
-        private static void ListarMascota()
-        {
-        var mascotas = _repoMascota.GetAllMascota();
-        foreach (Mascota m in mascotas)
-        {
-           Console.WriteLine(m.Nombre +" "+m.Especie+" "+m.Raza+" "+m.Color); 
-        }
+        *private static void BuscarMascota(int idMascota)
+        //{
+            //var mascota = _repoMascota.GetMascota(idMascota);
+            //Console.WriteLine(mascota.Nombre + " " + mascota.Raza+" "+mascota.Color+" "+mascota.Especie);
+       // }
+        //private static void ListarMascota()
+        //{
+       // var mascotas = _repoMascota.GetAllMascota();
+       // foreach (Mascota m in mascotas)
+        //{
+       //    Console.WriteLine(m.Nombre +" "+m.Especie+" "+m.Raza+" "+m.Color); 
+       // }
         
-        }
+       // }
 
     }
     

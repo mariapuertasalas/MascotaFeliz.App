@@ -1,0 +1,47 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.ListarMascotaModel
+@{
+}
+
+<section class='general'>
+
+  <div class='contenedor-titulo'>
+    <h4>Listado de Mascotas</h4>
+  </div>
+
+  <table class="table">
+    <thead>
+        
+        <th>Id</th>
+        <th>Identificacion</th>
+        <th>Nombre</th>
+        <th>Color</th>
+        <th>Especie</th>
+        <th>Raza</th>
+        <th>Dueno</th>
+        <th>Veterinario</th>
+        <th>Historia</th>
+
+    </thead>
+
+    
+</section>
+
+    <tbody>
+    @foreach (var mascota in Model.listarMascota)
+    {
+        <tr>
+            <td>@mascota.Id</td>
+            <td>@mascota.Identificacion</td>
+            <td>@mascota.Nombre</td>
+            <td>@mascota.Color</td>
+            <td>@mascota.Especie</td>
+            <td>@mascota.Raza</td>
+            <td></td>
+            <td></td>
+            <td></td>
+
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,33 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.EliminarDuenoModel
+@{
+}
+<section class='general'>
+
+  <div class='contenedor-titulo'>
+    <h4>Eliminar Propietario</h4>
+  </div>
+
+ 
+  <div class='formulario' id='register-dueno'>
+    <label class='msg-eliminar'>¿Esta seguro que desea eliminar el usuario seleccionado?</label>
+
+    <form method="POST">
+      <input type='hidden' name='id' id='id' value='@Model.dueno.Id'>
+      <div class='buttons'>
+        <input type='submit' value='Si' asp-page-handler="delete">
+        <a href='ListarDueno'><input type='button' value='No'></a>
+      </div>
+    </form>
+    
+    <input type='text' name='identificacion' id='identificacion' class='form-dueno' value='@Model.dueno.Identificacion' disabled>
+     <input type='text' name='nombres' id='nombres' class='form-dueno' placeholder='Nombres' value='@Model.dueno.Nombres' disabled>
+    <input type='text' name='apellidos' id='apellidos' class='form-dueno' placeholder='Apellidos' value='@Model.dueno.Apellidos' disabled>
+  </div>
+
+  
+  <div class='volver'>
+     <a href='ListarDueno'><i class="fa-solid fa-backward">Volver</i></a>
+  </div>
+
+</section>

@@ -1,0 +1,24 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.ActualizarVisitaModel
+@{
+}
+
+<section class='general'>
+  <div class='contenedor-titulo'>
+    <h4>Actualizar Visita</h4>
+  </div>
+  <div class='formulario' id='register-visita'>
+    <input type='hidden' name='id' id='id'>
+    <input type='date' name='fecha_visita' id='fecha_visita' class='form-visita' placeholder='Ingrese Fecha Visita'>
+    <input type='submit' value='Consultar'>
+    <input type='number' name='temperatura' id='temperatura' class='form-visita' placeholder='Ingrese Temperatura'>
+    <input type='number' name='peso' id='peso' class='form-visita' placeholder='Ingrese Peso'>
+    <input type='number' name='frecuencia_respiratoria' id='frecuencia_respiratoria' class='form-visita' placeholder='Ingrese Frecuencia Respiratoria'>
+    <input type='number' name='frecuencia_cardiaca' id='frecuencia_cardiaca' class='form-visita' placeholder='Ingrese Frecuencia Cardiaca'>
+    <input type='text' name='estado_de_animo' id='estado_de_animo' class='form-visita' placeholder='Ingrese Estado de Animo'>
+    <select  name='id_veterinario' id='id_veterinario' class='form-visita'><option value='#' selected>Seleccione Id Veterinario</option></select>
+    <input type='text' name='recomendaciones' id='recomendaciones' class='form-visita' placeholder='Ingrese Recomendaciones'>
+    <input type='submit' value='Actualizar'>
+    
+  </div>
+</section>

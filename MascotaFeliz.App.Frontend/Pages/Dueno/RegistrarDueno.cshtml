@@ -1,0 +1,28 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.RegistrarDuenoModel
+@{
+}
+<section class='general'>
+
+  <div class='contenedor-titulo'>
+    <h4>Registrar Propiertario</h4>
+  </div>
+
+ <form method="POST">
+  <div class='formulario' id='register-dueno'>
+    <input type='hidden' name='id' id='id'>
+    <input type='text' name='identificacion' id='identificacion' class='form-dueno' placeholder='Ingrese Identificacion'>
+    <input type='text' name='nombres' id='nombres' class='form-dueno' placeholder='Ingrese Nombres'>
+    <input type='text' name='apellidos' id='apellidos' class='form-dueno' placeholder='Ingrese Apellidos'>
+    <input type='text' name='direccion' id='direccion' class='form-dueno' placeholder='Ingrese Direccion'>
+    <input type='tel' name='telefono' id='telefono' class='form-dueno' placeholder='Ingrese Telefono'>
+    <input type='email' name='correo' id='correo' class='form-dueno' placeholder='Ingrese Correo'>
+    <input type='submit' value='Registrar'>
+  </div>
+ </form>
+ 
+  <div class='volver'>
+     <a href='ListarDueno'><i class="fa-solid fa-backward">Volver</i></a>
+  </div>
+
+</section>

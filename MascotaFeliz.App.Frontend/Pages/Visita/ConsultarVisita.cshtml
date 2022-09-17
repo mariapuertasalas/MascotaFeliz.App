@@ -1,0 +1,23 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.ConsultarVisitaModel
+@{
+}
+
+<section class='general'>
+  <div class='contenedor-titulo'>
+    <h4>Consultar Visita</h4>
+  </div>
+  <div class='formulario' id='register-visita'>
+    <input type='hidden' name='id' id='id' class='form-visita' placeholder='Ingrese Id'>
+    <input type='date' name='fecha_visita' id='fecha_visita' class='form-visita' placeholder='Ingrese Fecha Visita'>
+    <input type='submit' value='Consultar'>
+    <input type='number' name='temperatura' id='temperatura' class='form-visita' placeholder='Ingrese Temperatura'disabled>
+    <input type='number' name='peso' id='peso' class='form-visita' placeholder='Ingrese Peso'disabled>
+    <input type='number' name='frecuencia_respiratoria' id='frecuencia_respiratoria' class='form-visita' placeholder='Ingrese Frecuencia Respiratoria' disabled>
+    <input type='number' name='frecuencia_cardiaca' id='frecuencia_cardiaca' class='form-visita' placeholder='Ingrese Frecuencia Cardiaca'disabled>
+    <input type='text' name='estado_de_animo' id='estado_de_animo' class='form-visita' placeholder='Ingrese Estado de Animo'disabled>
+    <select  name='id_veterinario' id='id_veterinario' class='form-visita' disabled><option value='#' selected>Seleccione Id Veterinario</option></select>
+    <input type='text' name='recomendaciones' id='recomendaciones' class='form-visita' placeholder='Ingrese Recomendaciones'disabled>
+    
+  </div>
+</section>

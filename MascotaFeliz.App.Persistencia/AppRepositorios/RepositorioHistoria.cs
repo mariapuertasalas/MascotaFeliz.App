@@ -1,4 +1,4 @@
-/*using System.Runtime.Serialization;
+using System.Runtime.Serialization;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,15 +46,14 @@ namespace MascotaFeliz.App.Persistencia
             return GetAllHistorias_();
          }
 
-        public IEnumerable<Historia> GetHistoriasPorFiltro(DateTime filtro)
+        public IEnumerable<Historia> GetHistoriasPorFiltro(DateTimeFormat filtro)
         {
             var historias = GetAllHistorias(); // Obtiene todos los saludos
             if (historias != null)  //Si se tienen saludos
             {
-                if (!DateTime.IsNullOrEmpty(filtro)) // Si el filtro tiene algun valor
-                {
-                    historias = historias.Where(h => h.FechaInicial.Contains(filtro));
-                }
+                //if (!DateTime.IsNullOrEmpty(filtro)){
+                //historias = historias.Where(h => h.FechaInicial.Contains(filtro));
+                //}
             }
             return historias;
         }
@@ -86,5 +85,5 @@ namespace MascotaFeliz.App.Persistencia
 
 
     }
-}*/
+}
 

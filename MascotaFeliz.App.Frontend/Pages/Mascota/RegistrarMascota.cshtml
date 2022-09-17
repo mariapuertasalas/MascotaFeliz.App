@@ -1,0 +1,24 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.RegistrarMascotaModel
+@{
+}
+
+<section class='general'>
+  <div class='contenedor-titulo'>
+    <h4>Registro de Mascota
+    </h4>
+  </div>
+  <div class='formulario' id='register-mascota'>
+    <input type='hidden' name='id' id='id' class='form-mascota' placeholder='Ingrese Id'>
+    <input type='text' name='identificacion' id='identificacion' class='form-mascota' placeholder='Ingrese Identificacion'>
+    <input type='text' name='nombre' id='nombre' class='form-mascota' placeholder='Ingrese Nombre'>
+    <input type='text' name='color' id='color' class='form-mascota' placeholder='Ingrese Color'>
+    <select  name='especie' id='especie' class='form-mascota'><option value='#' selected>Seleccione Especie</option></select>
+    <select  name='raza' id='raza' class='form-mascota'><option value='#' selected>Seleccione Raza</option></select>
+    <select  name='dueno' id='dueno' class='form-mascota'><option value='#' selected>Seleccione Dueno</option></select>
+    <select  name='veterinario' id='veterinario' class='form-mascota'><option value='#' selected>Seleccione Veterinario</option></select>
+    <select  name='historia' id='historia' class='form-mascota'><option value='#' selected>Seleccione Historia</option></select>
+    <input type='submit' value='Registrar'>
+       
+  </div>
+</section>

@@ -21,11 +21,29 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                 });
 
             migrationBuilder.CreateTable(
+                name: "Mascotas",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Identificacion = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Color = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Especie = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    Raza = table.Column<string>(type: "nvarchar(max)", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Mascotas", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "Personas",
                 columns: table => new
                 {
                     Id = table.Column<int>(type: "int", nullable: false)
                         .Annotation("SqlServer:Identity", "1, 1"),
+                    Identificacion = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Nombres = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Apellidos = table.Column<string>(type: "nvarchar(max)", nullable: true),
                     Direccion = table.Column<string>(type: "nvarchar(max)", nullable: true),
@@ -66,58 +84,6 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                         onDelete: ReferentialAction.Restrict);
                 });
 
-            migrationBuilder.CreateTable(
-                name: "Mascotas",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    Nombre = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Color = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Especie = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    Raza = table.Column<string>(type: "nvarchar(max)", nullable: true),
-                    DuenoId = table.Column<int>(type: "int", nullable: true),
-                    VeterinarioId = table.Column<int>(type: "int", nullable: true),
-                    HsitoriaId = table.Column<int>(type: "int", nullable: true)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Mascotas", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Mascotas_Historias_HsitoriaId",
-                        column: x => x.HsitoriaId,
-                        principalTable: "Historias",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Mascotas_Personas_DuenoId",
-                        column: x => x.DuenoId,
-                        principalTable: "Personas",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                    table.ForeignKey(
-                        name: "FK_Mascotas_Personas_VeterinarioId",
-                        column: x => x.VeterinarioId,
-                        principalTable: "Personas",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Restrict);
-                });
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Mascotas_DuenoId",
-                table: "Mascotas",
-                column: "DuenoId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Mascotas_HsitoriaId",
-                table: "Mascotas",
-                column: "HsitoriaId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Mascotas_VeterinarioId",
-                table: "Mascotas",
-                column: "VeterinarioId");
-
             migrationBuilder.CreateIndex(
                 name: "IX_VisitasPyP_HistoriaId",
                 table: "VisitasPyP",
@@ -130,10 +96,10 @@ namespace MascotaFeliz.App.Persistencia.Migrations
                 name: "Mascotas");
 
             migrationBuilder.DropTable(
-                name: "VisitasPyP");
+                name: "Personas");
 
             migrationBuilder.DropTable(
-                name: "Personas");
+                name: "VisitasPyP");
 
             migrationBuilder.DropTable(
                 name: "Historias");

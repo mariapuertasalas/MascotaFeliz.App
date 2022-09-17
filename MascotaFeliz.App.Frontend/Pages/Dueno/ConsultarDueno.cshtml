@@ -1,0 +1,25 @@
+﻿@page
+@model MascotaFeliz.App.Frontend.Pages.ConsultarDuenoModel
+@{
+}
+<section class='general'>
+
+   <div class='contenedor-titulo'>
+    <h4>Detalle del Propietario</h4>
+  </div>
+
+  <div class='formulario' id='register-dueno'>
+    <input type='hidden' name='id' id='id' value='@Model.dueno.Id'>
+    <input type='text' name='identificacion' id='identificacion' class='form-dueno' placeholder='Identificacion' value='@Model.dueno.Identificacion' disabled>
+    <input type='text' name='nombres' id='nombres' class='form-dueno' placeholder='Nombres' value='@Model.dueno.Nombres' disabled>
+    <input type='text' name='apellidos' id='apellidos' class='form-dueno' placeholder='Apellidos' value='@Model.dueno.Apellidos' disabled>
+    <input type='text' name='direccion' id='direccion' class='form-dueno' placeholder='Direccion' value='@Model.dueno.Direccion' disabled>
+    <input type='tel' name='telefono' id='telefono' class='form-dueno' placeholder='Telefono' value='@Model.dueno.Telefono' disabled>
+    <input type='email' name='correo' id='correo' class='form-dueno' placeholder='Correo' value='@Model.dueno.Correo' disabled>
+  
+    <div class='volver'>
+     <a href='ListarDueno'><i class="fa-solid fa-backward">Volver</i></a>
+    </div>
+
+</section>
+    

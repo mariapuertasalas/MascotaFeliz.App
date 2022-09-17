@@ -1,0 +1,573 @@
+
+
+* {
+margin: 0;
+padding: 0;
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+body{
+    background-image: url(../images/huellas1.png);
+    background-repeat: no-repeat;
+    background-size: auto !important;
+    overflow-X: hidden;
+    height: 800px !important;
+}  
+.img{
+    position: relative;
+}
+#fondo{
+    z-index: 1;
+
+    margin: 0%;
+    width: 100%;
+    height: 250px;
+     
+}
+#burger{
+ background-position: right bottom;
+ padding: 15px;
+   
+}
+
+
+/*Pagina de Inicio*/
+
+.inicio h4 {
+   color: black;
+   text-align: center;
+   text-decoration: none;
+   font-size: 50px;
+   text-shadow: 7px 13px 37px #3498DB;
+
+}
+.from-inicio h4 {
+color: black;
+text-align: center;
+text-decoration: none;
+font-size: 10px;
+
+}
+
+#logo1{
+    width:30% !important;
+    text-align: center !important;
+    margin: 0px auto;
+    float: left;
+}
+
+#logo2{
+    width:25% !important;
+    text-align: center !important;
+    margin: 0px auto;
+    float: right;
+}
+
+#logo1 img{
+    width:550px;
+    padding: 20px;
+}
+
+#logo2 img{
+    width: 350px;
+    padding: 20px;
+}
+
+.container-logos{
+    position: absolute; 
+    width: 100%;
+}
+
+
+header{
+    height: 100%;
+    max-height: 250px;
+    position: relative;
+}
+
+#title{
+    text-align: center;
+    font-size: 100px;
+    border: 1px white;
+    font-family: 'Catalish Huntera Italic';
+    margin-bottom: -50px;
+}
+#slogan{
+    text-align: center;
+    font-size: 70px;
+    border: 1px #302e2eb3;
+    font-family: 'Herewell Creek';
+    color: #572480;
+}
+
+.inicio{
+    border-style: ridge;
+    padding: 2em;
+    margin: 10em auto;
+    width: 800px;
+    height: auto;
+    background-color: #ffffffad;
+    border-radius: 50px 50px 50px 50px;
+}
+
+/*Registro de Mascota*/
+
+#register1 {
+    width: 400px;
+    height: 400px;
+    background: #ede1f7;
+    position: relative;
+    top: -130px;
+    left: 200px;
+    padding: 10px 30px 30px 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50px;
+    border: 2px solid #ba7fe9;
+    border-style: dashed;
+    font-family: "Arial";
+    color: black;
+    z-index: 1;
+    box-shadow: 7px 13px 37px #000000;
+}
+
+#register2{
+    width: 440px;
+    height: 450px;
+    background: #ede1f7;
+    position: relative;
+    top: -130px;
+    left: 200px;
+    padding: 10px 30px 30px 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50px;
+    border: 2px solid #ba7fe9;
+    border-style: dashed;
+    font-family: "Arial";
+    color: black;
+    z-index: 1;
+    box-shadow: 7px 13px 37px #000000;
+}
+
+#register3{
+    width: 440px;
+    height: 450px;
+    background: #ede1f7;
+    position: relative;
+    top: -130px;
+    left: 200px;
+    padding: 10px 30px 30px 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50px;
+    border: 2px solid #ba7fe9;
+    border-style: dashed;
+    font-family: "Arial";
+    color: black;
+    z-index: 1;
+    box-shadow: 7px 13px 37px #000000;
+}
+
+#register4{
+    width: 400px;
+    height: 400px;
+    background: #ede1f7;
+    position: relative;
+    top: -130px;
+    left: 200px;
+    padding: 10px 30px 30px 30px;
+    margin: auto;
+    margin-top: 100px;
+    border-radius: 50px;
+    border: 2px solid #ba7fe9;
+    border-style: dashed;
+    font-family: "Arial";
+    color: black;
+    z-index: 1;
+    box-shadow: 7px 13px 37px #000000;
+}
+
+.register h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    color: #572480;
+    font-family: Arial;
+    text-align: center;
+}
+.register .controls{
+    width: 100%;
+    background: white;
+    padding: 2px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid #bc80e6;
+    font-family: "Arial";
+    font-size: 14px;
+    height: 30px;
+}
+.register p {
+color: black;
+text-align: center;
+text-decoration: none;
+}
+.register .botons{
+    width: 100%;
+    background: white;
+    border: 1px solid #bc80e6;
+    text-align: center;
+    padding: 8px;
+}
+.form-register{
+    width: 400px;
+    height: 350px;
+    background: white;
+    position: relative;
+    bottom: 510px;
+    left: -10px;
+    padding: 0px;
+    border: 2px solid #bc80e6;
+    border-style: dashed;
+    font-weight: bold;
+    color: #572480;
+    background-image: url(../images/perro.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 270px;
+    box-shadow: 7px 13px 37px #000000;
+ }
+
+section h4 {
+    font-size: 100px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(87, 36, 128);
+    font-family: "South Australia";
+    letter-spacing: 3px;
+}
+
+.botoninicio .boton{
+background-color: #87CEFA; 
+border-radius: 20px;
+color: white;
+padding: 8px 32px;
+text-align: center;
+display: inline-block;
+font-size: 20px;
+box-shadow: 7px 13px 37px #3498DB;
+margin: 30px auto;
+margin-left: 100px;
+
+
+
+}
+
+/*Registro de Propietarios*/
+
+.registerPropietario{
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: relative;
+    bottom: 550px;
+    left: -30px;
+    padding: 0px;
+    border: 2px solid #bc80e6;
+    border-style: dashed;
+    font-weight: bold;
+    color: #572480;
+    background-image: url(../images/propietario.jpg);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 400px;
+    box-shadow: 7px 13px 37px #000000;
+    font-size: 80px;
+ }
+
+ .registerPropietario h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 80px;
+    color: #572480;;
+ }
+
+ /*Registro de Veterinario*/
+
+
+.registerVeterinario{
+    width: 400px;
+    height: 400px;
+    background: white;
+    position: relative;
+    bottom: 550px;
+    left: -30px;
+    padding: 0px;
+    border: 2px solid #bc80e6;
+    border-style: dashed;
+    font-weight: bold;
+    color: #572480;
+    background-image: url(../images/veterinario.png);
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: 360px;
+    box-shadow: 7px 13px 37px #000000;
+    font-size: 80px;
+ }
+
+ .registerVeterinario h4 {
+    margin-bottom: 20px;
+    text-align: center;
+    font-size: 80px;
+    color: #572480;;
+ }
+ 
+
+ /*Consulta de Mascota*/
+
+
+ .boton .botons {
+  color: black;
+  background: white;
+  border-radius: 8px;
+  padding: px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+  margin-top: px;
+ }
+ .register h3 {
+   font-size: 30px;
+   margin-bottom: 30px;
+   margin-top: 20px;
+ }
+  
+  .tb,h2{
+    color: #572480;
+    text-align: center;
+    margin: 20px auto;
+    font-size: 80px;
+  }
+
+  .container-tabla{
+    background-color: white;
+    border-color: #bc80e6;
+    border-radius: 30px;
+    border-style: dashed;
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 60px;
+    font-family: 'South Australia';
+  }
+
+
+
+/*----------------------------------------------------*/
+
+
+@font-face {
+    font-family: 'Catalish Huntera';
+    src: local("Catalish Huntera"),
+    local("Catalish Hunter"),
+    url(../fonts/CatalishHuntera/Catalish\ Huntera.ttf);
+  }
+
+  @font-face {
+    font-family: 'Catalish Huntera Italic';
+    src: local("Catalish Huntera Italic"),
+    local("Catalish Huntera Italic"),
+    url(../fonts/CatalishHuntera/Catalish\ Huntera\ Italic.ttf);
+  }
+
+
+  @font-face {
+    font-family: 'Herewell Creek';
+    src: local('Herewell Creek'),
+    local('Herewell Creek'),
+    url(../fonts/HerewellCreek/Herewell\ Creek.ttf);
+  }
+
+  @font-face {
+    font-family: 'South Australia';
+    src: local('South Australia'),
+    local('South Australia'),
+    url(../fonts/SouthAustralia/South\ Australia.ttf);
+  }
+
+.general{
+    max-width: 1280px;
+    min-width: 800px;
+    width: 100% !important;
+    height: auto;
+    margin: 20px auto;
+    padding: 20px 10px 50px 10px;
+    background-color: #ffffff;
+    border: 2px #572480 dashed;
+    border-radius: 50px;
+}
+
+
+.formulario input{
+    width: 80%;
+    height: 35px;
+    margin: 8px;
+    border: 1px #572480 solid;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'FontAwesome';
+    color: rgb(112 109 109);
+    letter-spacing: 3px;
+    background-color: white;
+}
+
+.formulario select{
+    width: 80%;
+    height: 35px;
+    margin: 8px;
+    border: 1px #572480 solid;
+    padding: 5px;
+    border-radius: 10px;
+    font-family: 'FontAwesome';
+    letter-spacing: 3px;
+}
+
+.formulario{
+    text-align: center;
+}
+
+.contenedor-titulo{
+    padding: 0px 0px 30px 0px;
+    width: 100%;
+}
+
+input[type='submit']{
+    width: 30% !important;
+    background-color: #4f267d;
+    color: white;
+    font-family: 'FontAwesome';
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input[type='button']{
+    width: 30% !important;
+    background-color: #ffffff;
+    color: #4f267d;
+    border: 1px #4f267d solid;
+    font-family: 'FontAwesome';
+    letter-spacing: 3px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+input[type='button']:hover{
+    color: #ffffff;
+    background-color: #715096;
+    border: 1px #ffffff solid;
+}
+
+input[type='submit']:hover{
+    color: #ffffff;
+    background-color: #2e045e;
+    border: 1px #ffffff solid;
+}
+
+contenedor-tabla{
+    margin: 0px auto;
+}
+
+table{
+    width: 95% !important;
+    margin-left: 2.5%;
+}
+  
+ a i{
+    color: #582581;
+ }
+
+ td{
+    font-family: 'FontAwesome';
+    font-size: 12px;
+    letter-spacing: 3px;
+    text-align: center !important;
+    padding: 20px 10px 20px 10px;
+ }
+
+ th{
+    font-family: 'FontAwesome';
+    font-size: 14px;
+    letter-spacing: 3px;
+    text-align: center !important;
+    padding: 20px 10px 20px 10px;
+    background: #572480 !important;
+    color: white !important;
+ }
+ 
+
+ .table tr:hover{
+    background-color:rgb(241, 241, 241) !important;   
+}
+
+.navbar-nav{
+    margin: 0px auto !important;
+}
+
+.nav-item a{
+    font-family: 'FontAwesome';
+    letter-spacing: 3px;
+    letter-spacing: 3px;
+}
+
+.navbar{
+    height: 7% !important;
+}
+
+section h4 {
+    font-size: 100px;
+    margin-top: 20px;
+    text-align: center;
+    color: rgb(87, 36, 128);
+    font-family: "South Australia";
+    letter-spacing: 3px;
+}
+
+.volver{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.msg-eliminar{
+    font-family: 'FontAwesome';
+    letter-spacing: 3px;
+}
+
+.button-registrar{
+    width: 137px;
+    padding: 10px 20px 10px 20px;
+    letter-spacing: 3px;
+    background-color: #572480;
+    color: white !important;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    margin-left: 30px;
+    font-size: 10px;
+    cursor: pointer;
+}
+
+.button-registrar:hover{
+    color: #ffffff;
+    background-color: #715096;
+    border: 1px #ffffff solid;
+    cursor: pointer;
+}
+
+a .button-registrar i{
+    color:white !important;
+}
+
+a .button-registrar:hover i{
+    color:white !important;
+}

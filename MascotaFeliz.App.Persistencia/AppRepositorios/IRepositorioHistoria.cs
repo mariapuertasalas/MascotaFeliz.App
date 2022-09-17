@@ -1,4 +1,4 @@
-/*using System.Runtime.Serialization;
+using System.Runtime.Serialization;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -16,4 +16,4 @@ namespace MascotaFeliz.App.Persistencia
         public Historia GetHistoria(int idHistoria);
         public IEnumerable<Historia> GetHistoriasPorFiltro(DateTimeFormat filtro);
     }
-}*/
+}

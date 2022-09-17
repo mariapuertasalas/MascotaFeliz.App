@@ -74,6 +74,7 @@ namespace MascotaFeliz.App.Persistencia
             var mascotaEncontrada = _appContext.Mascotas.FirstOrDefault(m => m.Id == mascota.Id);
             if (mascotaEncontrada != null)
             {
+                mascotaEncontrada.Identificacion = mascota.Identificacion;
                 mascotaEncontrada.Nombre = mascota.Nombre;
                 mascotaEncontrada.Color = mascota.Color;
                 mascotaEncontrada.Especie = mascota.Especie;
